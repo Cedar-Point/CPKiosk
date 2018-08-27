@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskBar));
             this.StartButton = new System.Windows.Forms.Button();
             this.StartMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.firefoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,13 +43,15 @@
             this.Border2 = new System.Windows.Forms.PictureBox();
             this.timeLbl = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.StartMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Border1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Border2)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // StartButton
@@ -175,65 +176,66 @@
             this.clockTimer.Interval = 1000;
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.button4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(62, 1);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(561, 25);
+            this.flowLayoutPanel1.TabIndex = 6;
+            // 
             // button1
             // 
-            this.button1.AutoEllipsis = true;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(150, 22);
+            this.button1.Size = new System.Drawing.Size(148, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.AutoEllipsis = true;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(165, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.button2.Location = new System.Drawing.Point(148, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(150, 22);
+            this.button2.Size = new System.Drawing.Size(148, 23);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
+            // button3
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(68, 4);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(554, 22);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.button3.Location = new System.Drawing.Point(296, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(0, 23);
+            this.button4.Margin = new System.Windows.Forms.Padding(0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(148, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // TaskBar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(700, 28);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.timeLbl);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.Border1);
@@ -246,7 +248,7 @@
             this.StartMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Border1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Border2)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -266,9 +268,11 @@
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.Label timeLbl;
         private System.Windows.Forms.Timer clockTimer;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

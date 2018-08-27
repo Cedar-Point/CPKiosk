@@ -58,6 +58,14 @@ namespace CPKiosk
             */
         }
 
+        public static void createButton(string Title)
+        {
+
+
+
+
+        }
+
         private async void StartMenu_Opened(object sender, EventArgs e)
         {
             int maxWidth = 0;
